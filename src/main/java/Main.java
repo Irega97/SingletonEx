@@ -1,6 +1,12 @@
 public class Main {
     public static void main(String[] args) {
+
+        //Prueba sin Singleton
+        Manager m = new Manager();
+        System.out.println(m.getText("ca", "l1") + " en frio");
+
         // Hello in 4 different languages
+        System.out.println("EN CALIENTE");
         System.out.println(I18NManager.getInstance().getText("en", "l1"));
         System.out.println(I18NManager.getInstance().getText("es", "l1"));
         System.out.println(I18NManager.getInstance().getText("ca", "l1"));
